@@ -80,14 +80,14 @@ resource "aws_security_group" "my_sg" {
 
 # EC2 Instance
 resource "aws_instance" "my_instance" {
-  ami                         = "ami-0d5bf08bc8017c83b"
+  ami                         = "ami-07d9b9ddc6cd8dd30"
   instance_type               = "t2.micro"
-  key_name                    = "riteshkp"
+  key_name                    = "riteshawskp"
   subnet_id                   = aws_subnet.mypublic_subnet.id
   vpc_security_group_ids      = [aws_security_group.my_sg.id]
   associate_public_ip_address = true
 
   tags = {
-    Name = "Hello-Terraform"
+    Name = "Hello-GitTerraform"
   }
 }
