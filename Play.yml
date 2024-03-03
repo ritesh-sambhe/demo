@@ -1,0 +1,7 @@
+---
+- name: install apache
+  hosts: web
+  become: true
+  tasks:
+  - name: apache
+    apt: name=apache2 state=latest 
