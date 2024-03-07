@@ -3,5 +3,5 @@
   hosts: all
   become: true
   tasks:
-  - name: apache
-    apt: name=apache2 state=latest 
+  - name: mysql
+    apt: name=mysql-server state=latest 
