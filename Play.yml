@@ -3,5 +3,8 @@
   hosts: all
   become: true
   tasks:
-  - name: mysql
-    apt: name=mysql-server state=latest 
+  - name: install apache2 
+    apt: name=apache2 update_cache=yes state=latest
+
+  - name: start apache2 service
+    service: name=apache2 state=started
