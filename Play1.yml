@@ -3,5 +3,5 @@
   hosts: all
   become: true
   tasks: 
-  - name: Installing nginx on s1
+  - name: Installing nginx on ansible s1
     apt: name=nginx state=latest
