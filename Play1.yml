@@ -1,0 +1,6 @@
+---
+  name: Nginx
+  hosts: all
+  become: true
+  name: installing nginx on s1
+  - apt: name=nginx state=latest
